@@ -1,44 +1,38 @@
 import React from "react";
 import "./Header.css";
 import Button from "../Button/Button";
+import logo from "../../assets/logo.png";
+
 function Header() {
   return (
-    <div className="header">
-      <div className="logo">
-        <img src="src/assets/logo.png" alt="logo" />
+    <header className="header">
+      <div className="header-logo">
+        <img src={logo} alt="logo" />
       </div>
-      <div className="menu">
-        <nav>
-          <li className="menu-item">
-            <a href="#home">Home</a>
-          </li>
-          <li className="menu-item">
-            <a href="#vehicles">Vehicles</a>
-          </li>
-          <li className="menu-item">
-            <a href="#pricing">Pricing</a>
-          </li>
-          <li className="menu-item">
-            <a href="#about">About</a>
-          </li>
-          <li className="menu-item">
-            <a href="#contact">Contact</a>
-          </li>
-        </nav>
-      </div>
-      <div className="button">
+
+      <nav className="header-menu">
+        <ul className="header-menu-list">
+          {["Home", "Vehicles", "Pricing", "About", "Contact"].map((item) => (
+            <li key={item} className="header-menu-item">
+              <a href={`#${item.toLowerCase()}`}>{item}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <div>
         <Button
           text="Sign In"
-          className="signin"
-          onClick={() => alert("Clicked!")}
+          className="button-base signin"
+          onClick={() => alert("Sign In clicked!")}
         />
         <Button
           text="Book Me"
-          className="bookme"
-          onClick={() => alert("Clicked!")}
+          className="button-base bookme"
+          onClick={() => alert("Book Me clicked!")}
         />
       </div>
-    </div>
+    </header>
   );
 }
 
