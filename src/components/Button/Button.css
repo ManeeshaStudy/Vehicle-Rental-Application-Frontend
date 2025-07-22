@@ -1,0 +1,41 @@
+.global-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .global-button:hover {
+    background-color: #555;
+  }
+
+  .signin {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    margin-right: 15px;
+  }
+  
+  .signin:hover {
+    background-color:#808080;
+    color: #fff;
+  }
+
+  .bookme {
+    background-color: #000;
+    color: #fff;
+    margin-right: 15px;
+    border: 1px solid #000;
+
+  }
+  
+  .bookme:hover {
+    background-color:#fff;
+    color: #000;
+    border: 1px solid #000;
+  }
+  

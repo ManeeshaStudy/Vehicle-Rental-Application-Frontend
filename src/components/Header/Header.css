@@ -1,0 +1,36 @@
+.header {
+  height: 70px;
+  border-bottom: 0.5px solid grey;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 30px;
+}
+
+img {
+  height: 100px;
+  width: 350px;
+}
+
+.menu {
+  nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+  .menu-item a{
+    text-decoration: none;    
+    color: #000;  
+  }
+  .button{
+    .signup{
+      all: unset;
+    }
+    .bookme{
+      all: unset;
+    }
+  }
+}
